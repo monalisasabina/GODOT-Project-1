@@ -27,3 +27,21 @@ Player (Node2D or CharacterBody2D - the container)
 ├── Camera2D (camera following the player)
 └── AudioStreamPlayer (sound effects like footsteps)
 ```
+---
+
+## what is Sprite?
+Sprite = a 2D graphic/image in a game
+
+History: The term comes from old arcade games in the 1970s-80s where hardware had special "sprite" chips to move small images around the screen efficiently.
+
+You give it an image file (like icon.svg, a PNG, or JPG)
+It shows that image on screen
+You can move it, rotate it, scale it, animate it
+
+### Example
+- Your player character image = sprite
+- Enemy images = sprites
+- Coins, power-ups, bullets = all sprites
+- Even background elements can be sprites
+
+---

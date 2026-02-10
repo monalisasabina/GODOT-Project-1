@@ -58,6 +58,7 @@ The code does nothing:
 ```
 so now that that hello world is appearing, what can we do next? how can we get some things moving? 😁
 ```
+Sprite2D = a node that displays a 2D image/texture
 
 #### 1. Step 1: Add a sprite to see
 - Click on "Node2D" in the Scene panel (left)
@@ -76,6 +77,7 @@ so now that that hello world is appearing, what can we do next? how can we get s
 Update your ```node_2d.gd``` script to this:
 
 ```gdscript
+
 extends Node2D
 
 var speed = 200.0  # pixels per second
@@ -88,3 +90,34 @@ func _process(delta):
     $Sprite2D.position.x += speed * delta
 
 ```
+
+#### 4. Run It
+- Save (Ctrl+S)
+- Click ▶ to run
+- Watch the icon slide across the screen! 🚀
+
+----
+
+### Prompt 4: Function breakdown
+```
+func _process(delta): 
+    # Move the sprite to the right 
+    $Sprite2D.position.x += speed * delta
+
+    ...... explain this function. what does position .x do? is delta =60 seconds default? can delta be something some other time?
+```
+
+1.  ```func _process(delta):```
+- This function runs every frame (not every second)
+- If your game runs at 60 FPS (frames per second), this runs 60 times in one second
+
+2. ```$Sprite2D.position.x```
+- $Sprite2D = shortcut to access your Sprite2D child node (like document.querySelector() in JS)
+- .position = the (x, y) coordinates of where the sprite is on screen
+- .x = just the horizontal position
+- So $Sprite2D.position.x means "the sprite's horizontal position"
+
+2. ```+= speed * delta```
+- speed = 200.0 (we defined this at the top)
+- delta = time since last frame in seconds (NOT 60 seconds!)
+- += adds to the current position
