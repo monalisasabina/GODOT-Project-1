@@ -45,3 +45,24 @@ You can move it, rotate it, scale it, animate it
 - Even background elements can be sprites
 
 ---
+
+### Project structure
+
+MyGame/
+├── project.godot
+├── scenes/
+│   ├── player.tscn
+│   ├── enemy.tscn
+│   └── main.tscn
+├── scripts/
+│   ├── player.gd
+│   └── enemy.gd
+├── assets/
+│   ├── images/
+│   └── sounds/
+└── .gitignore
+
+- ```project.godot``` = the main project file
+- Scenes go in folders (.tscn files)
+- Scripts go in folders (.gd files)
+- Assets (images, sounds) go in folders

@@ -121,3 +121,50 @@ func _process(delta):
 - speed = 200.0 (we defined this at the top)
 - delta = time since last frame in seconds (NOT 60 seconds!)
 - += adds to the current position
+
+---
+
+
+### Prompt 5: Project Structure
+```
+this is my project structure from the time we started.... can you reorganise it as the way you have told me
+
+.
+├── Readme.md
+├── docs
+│   ├── Journal
+│   │   ├── day 1.md
+│   │   ├── day_1_ai_prompts.md
+│   │   └── notes.md
+│   └── toolkit
+│       └── Roadmap by Claude.md
+├── icon.svg
+├── icon.svg.import
+├── node_2d.gd
+├── node_2d.gd.uid
+├── node_2d.tscn
+└── project.godot
+
+```
+Answer:
+
+```
+/
+├── project.godot
+├── .gitignore
+├── Readme.md
+├── scenes/
+│   └── node_2d.tscn
+├── scripts/
+│   └── node_2d.gd
+├── assets/
+│   └── images/
+│       └── icon.svg
+└── docs/
+    ├── Journal/
+    │   ├── day_1.md
+    │   ├── day_1_ai_prompts.md
+    │   └── notes.md
+    └── toolkit/
+        └── Roadmap by Claude.md
+```

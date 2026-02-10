@@ -1,6 +1,6 @@
 extends Node2D
 
-var speed = 50 # pixels per second
+var speed = 200 # pixels per second
 
 func _ready():
 	print("Hello Godot!")
